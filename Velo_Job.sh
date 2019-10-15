@@ -1,7 +1,10 @@
-#--- Velocito vs. kallisto + bustools + loompy (v3.0.6) :
-#--- 10-14-2019
-#--- 1- kallisto + bustools + loompy (v3.0.6) : runibng time ~ 1h (8 threads)
-#--- See. http://linnarssonlab.org/loompy/kallisto/index.html
+#--------------------- Velocito vs. kallisto + bustools + loompy (v3.0.6) :
+#-- 10-14-2019
+#-- 1- kallisto + bustools + loompy (v3.0.6) : runibng time ~ 1h (8 threads)
+#-- See. http://linnarssonlab.org/loompy/kallisto/index.html
+#-- Install loompy : pip install -U loompy
+#-- kallisto (https://pachterlab.github.io/kallisto/download.html)
+#-- bustools (https://github.com/BUStools/bustools) 
 
 #!/bin/bash
 #PBS -l nodes=1:ppn=8,walltime=05:00:00
@@ -21,7 +24,8 @@ metadata.tab \ #tab "\t" delimited table: containing sample name (name), technol
 /projects/nehard/SingleCell/LifeSpan/fastq/JB18031/JB18031_GT18-06631_SI-GA-F4_S7_L007_R1_001.fastq.gz \
 /projects/nehard/SingleCell/LifeSpan/fastq/JB18031/JB18031_GT18-06631_SI-GA-F4_S7_L007_R2_001.fastq.gz  \
 
-#--- 2- Cell ranger (v3) + Velocito: runibng time ~ 10h
+#------------------- 2- Cell ranger (v3) + Velocito: runibng time ~ 10h
+
 #--  See. http://velocyto.org/velocyto.py/tutorial/cli.html#run10x-run-on-10x-chromium-samples
 
 #!/bin/bash
