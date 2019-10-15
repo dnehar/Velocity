@@ -1,6 +1,6 @@
 #--------------------- Velocito vs. kallisto + bustools + loompy (v3.0.6) :
-#-- 10-14-2019
-#-- 1- kallisto + bustools + loompy (v3.0.6) : runibng time ~ 1h (8 threads)
+#-- 1- kallisto + bustools + loompy (v3.0.6) : runing time ~ 1h (8 threads)
+#-- Goal :  From fastq file to loom files that can be analyzed using the  scanpoy scvelo (Theis lab)
 #-- See. http://linnarssonlab.org/loompy/kallisto/index.html
 #-- Install loompy : pip install -U loompy
 #-- kallisto (https://pachterlab.github.io/kallisto/download.html)
