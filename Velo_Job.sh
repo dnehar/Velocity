@@ -20,7 +20,7 @@ export LANG=en_US.UTF-8 LANGUAGE=en_US.en LC_ALL=en_US.UTF-8
 
 loompy fromfq --threads 8 JB18031.loom JB18031 \
 /projects/nehard/SingleCell/Softwares/cellranger/human_GRCh38_gencode.v31 \
-metadata.tab \ #tab "\t" delimited table: containing sample name (name), technology (10xv2, 10xv3) and targetnumcells
+metadata.tab \ #tab delimited table: containing sample name (name), technology (10xv2, 10xv3) and targetnumcells
 /projects/nehard/SingleCell/LifeSpan/fastq/JB18031/JB18031_GT18-06631_SI-GA-F4_S7_L007_R1_001.fastq.gz \
 /projects/nehard/SingleCell/LifeSpan/fastq/JB18031/JB18031_GT18-06631_SI-GA-F4_S7_L007_R2_001.fastq.gz  \
 
