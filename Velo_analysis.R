@@ -1,6 +1,10 @@
- library(Seurat)
- library(velocyto.R)
- library(SeuratWrappers)
+library(devtools) 
+library(Seurat)
+library(velocyto.R)
+library(SeuratWrappers)
+
+#- Install SeuratWrappers ; devtools::install_github('satijalab/seurat-wrappers')
+#- Install "velocyto.R" : install_github("velocyto-team/velocyto.R")
 
 
 # If you don't have velocyto's example mouse bone marrow dataset, download with the CURL command
