@@ -3,7 +3,7 @@ library(Seurat)
 library(velocyto.R)
 library(SeuratWrappers)
 
-#- Install SeuratWrappers ; devtools::install_github('satijalab/seurat-wrappers')
+#- Install SeuratWrappers : devtools::install_github('satijalab/seurat-wrappers')
 #- Install "velocyto.R" : install_github("velocyto-team/velocyto.R")
 
 
@@ -11,7 +11,7 @@ library(SeuratWrappers)
 # curl::curl_download(url = 'http://pklab.med.harvard.edu/velocyto/mouseBM/SCG71.loom', destfile
 # = '~/Downloads/SCG71.loom')
 
-  ldat <- ReadVelocity(file = "~/Downloads/JB18036_HO4.loom")
+  ldat <- ReadVelocity(file = "path_to_loom/JB18036_HO4.loom")
   bm <- as.Seurat(x = ldat)
   bm <- SCTransform(object = bm, assay = "spliced")
   bm <- RunPCA(object = bm, verbose = FALSE)
@@ -23,7 +23,7 @@ library(SeuratWrappers)
   names(x = ident.colors) <- levels(x = bm)
   cell.colors <- ident.colors[Idents(object = bm)]
   names(x = cell.colors) <- colnames(x = bm)
-  save(bm, file = '/Users/nehard/JB_lab/Analyses/SingleCells/Velo_test1.rds')
+  save(bm, file = 'path_to_rds/Velo_test1.rds')
   p <- show.velocity.on.embedding.cor(emb = Embeddings(object = bm, reduction = "umap"), 
                                  vel = Tool(object = bm, slot = "RunVelocity"),
                                  n = 200, scale = "sqrt", 
