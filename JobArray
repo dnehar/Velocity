@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=8,walltime=25:00:00
+#PBS -q batch
+#PBS -N loompy
+#PBS -t 1-10
+
+cd $PBS_O_WORKDIR
+
+#source activate velo
+source activate scanp-dev 
+
+module load kallisto/0.46.0
+
+export LANG=en_US.UTF-8 LANGUAGE=en_US.en LC_ALL=en_US.UTF-8
+
+FILE1=$(head -n $PBS_ARRAYID R1_files.txt | tail -n 1) #path to R1 fastq files
+FILE2=$(head -n $PBS_ARRAYID R2_files.txt | tail -n 1) #path to R2 fastq files
+NAME=${FILE1:43:7} #Extract the same names
+
+loompy fromfq --threads 8 $NAME.loom $NAME \
+/projects/nehard/SingleCell/Softwares/cellranger/human_GRCh38_gencode.v31 \
+metadata.tab \
+$FILE1 \
+$FILE2
