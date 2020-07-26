@@ -7,3 +7,7 @@
 #-- kallisto (https://pachterlab.github.io/kallisto/download.html)  
 #-- bustools (https://github.com/BUStools/bustools)   
 #-- h5py 2.9.0 : pip install h5py==2.9.0  
+
+
+# 2- Cell ranger (v3) + Velocito: runibng time ~ 10h  
+#--  See. http://velocyto.org/velocyto.py/tutorial/cli.html#run10x-run-on-10x-chromium-samples  
