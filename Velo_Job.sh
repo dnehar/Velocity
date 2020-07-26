@@ -1,4 +1,4 @@
-#--------------------- Velocito vs. kallisto + bustools + loompy (v3.0.6) :
+#--------------------- Comparing 'Cell ranger (v3) - Velocito' pipeline with kallisto + bustools + loompy (v3.0.6) :
 
 # 1- kallisto + bustools + loompy (v3.0.6) : runing time ~ 1h (8 threads)
 #-- Goal :  From fastq file to loom files that can be analyzed using the  scanpoy scvelo (Theis lab)
